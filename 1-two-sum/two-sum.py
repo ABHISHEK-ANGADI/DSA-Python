@@ -1,5 +1,5 @@
 class Solution:
-    def twoSum(self, nums: List[int], target: int) -> List[int]:
+    def twoSum(self, nums: list[int], target: int) -> list[int]:
         n = len(nums)
         dict1 = {}
 
@@ -7,4 +7,5 @@ class Solution:
             rem = target - nums[i]
             if rem in dict1:
                 return [dict1[rem], i]
+
             dict1[nums[i]] = i
